@@ -1,13 +1,13 @@
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
 Summary(pl):	Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji katalogami CD
 Name:		katalog
-Version:	1.7
+Version:	1.7b
 Release:	1
 Epoch:		1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://linux.sky.pl/maciek/%{name}/%{name}-%{version}.tar.bz2
-URL:		http://www.linux.sky.pl/maciek/katalog.html
+Source0:	http://www.ceti.pl/eaquer/%{name}/%{name}-%{version}.tar.bz2
+URL:		http://www.ceti.pl/eaquer/
 Requires:	sed
 Requires:	findutils
 Requires:	grep
@@ -44,8 +44,6 @@ install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_bindir},%{_sysconfdir}}
 install kat{add,ls,sch} $RPM_BUILD_ROOT%{_bindir}
 install katalogrc $RPM_BUILD_ROOT%{_sysconfdir}
 
-gzip -9nf README CHANGELOG
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -54,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/%{name}
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/*
-%doc *gz
+%doc README CHANGELOG
