@@ -1,7 +1,7 @@
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
 Summary(pl):	Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji katalogami CD	
 Name:		katalog
-Version:	1.05
+Version:	1.7
 Release:	1
 Epoch:		1
 License:	GPL
@@ -9,8 +9,7 @@ Group:		Applications/Archiving
 Group(de):	Applikationen/Archivierung
 Group(pl):	Aplikacje/Archiwizacja
 Source0:	http://linux.sky.pl/maciek/%{name}/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-PLD.patch
-URL:		http://www.linux.sky.pl/maciek	
+URL:		http://www.linux.sky.pl/maciek/katalog.html
 Requires:	sed
 Requires:	findutils
 Requires:	grep
@@ -36,8 +35,7 @@ katalogami CD:
  - katls - Tworzy listê zainstalowanych baz danych
 
 %prep
-%setup  -q -c %{name}-%{version}
-%patch0 -p1
+%setup  -q
 
 %build
 
