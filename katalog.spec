@@ -1,12 +1,12 @@
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
 Summary(pl):	Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji katalogami CD
 Name:		katalog
-Version:	1.7b
+Version:	1.8
 Release:	1
 Epoch:		1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://www.ceti.pl/eaquer/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://www.ceti.pl/eaquer/%{name}/%{name}-%{version}.tar.gz
 URL:		http://www.ceti.pl/eaquer/
 Requires:	sed
 Requires:	findutils
