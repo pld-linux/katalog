@@ -1,7 +1,7 @@
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
 Summary(pl):	Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji katalogami CD
 Name:		katalog
-Version:	1.8b
+Version:	1.8c
 Release:	1
 Epoch:		1
 License:	GPL
