@@ -1,0 +1,64 @@
+diff -urN aaa/katalog-1.05/katadd katalog-1.05/katadd
+--- aaa/katalog-1.05/katadd	Sun Nov  4 13:47:28 2001
++++ katalog-1.05/katadd	Sun Feb  3 19:04:19 2002
+@@ -26,7 +26,7 @@
+ check_cd=yes
+ sed=`which sed`
+ 
+-set -x
++#set -x
+ # Source settings from /etc/katalogrc
+ if [ -f /etc/katalogrc ]
+ then
+diff -urN aaa/katalog-1.05/katls katalog-1.05/katls
+--- aaa/katalog-1.05/katls	Sun Nov  4 13:35:52 2001
++++ katalog-1.05/katls	Sun Feb  3 19:04:22 2002
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ # Katalog 1.05 by Maciej Korzen <maciekk@linux.sky.pl>
+ # KATalogLiSt - list names of databases, or content(s) of base(s).
+ #
+@@ -23,6 +23,7 @@
+ BOLD="\033[1;37m"
+ NORMAL="\033[0m"
+ sed=`which sed`
++sort=`which sort`
+ 
+ # Source settings from /etc/katalogrc
+ if [ -f /etc/katalogrc ]
+@@ -47,7 +48,7 @@
+ }
+ 
+ find_filter() {
+-    /bin/egrep -v '(^$|^./$|^.$)' | ${sed} 's/^.\///' | /usr/bin/sort
++    /bin/egrep -v '(^$|^./$|^.$)' | ${sed} 's/^.\///' | ${sort}
+ }
+ 
+ for arg in $*
+diff -urN aaa/katalog-1.05/katsch katalog-1.05/katsch
+--- aaa/katalog-1.05/katsch	Sun Nov  4 13:36:25 2001
++++ katalog-1.05/katsch	Sun Feb  3 19:04:34 2002
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ # Katalog 1.05 by Maciej Korzen <maciekk@linux.sky.pl>
+ # KATalogSearCH - look for expression in bases
+ #
+@@ -23,6 +23,7 @@
+ BOLD="\033[1;37m"
+ NORMAL="\033[0m"
+ sed=`which sed`
++sort=`which sort`
+ 
+ # Source settings from /etc/katalogrc
+ if [ -f /etc/katalogrc ]
+@@ -41,7 +42,7 @@
+ }
+ 
+ find_filter() {
+-    /bin/egrep -v '(^$|^./$|^.$)' | ${sed} 's/^.\///' | /usr/bin/sort
++    /bin/egrep -v '(^$|^./$|^.$)' | ${sed} 's/^.\///' | ${sort}
+ }
+ 
+ if [ "$#" != "1" ]
