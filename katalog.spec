@@ -9,6 +9,7 @@ Epoch:		1
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://www.ceti.pl/eaquer/%{name}/%{name}-%{version}%{_pre}.tar.gz
+# Source0-md5:	53255b8eec9ac1b55aacb1b9a3b5f28b
 URL:		http://www.ceti.pl/eaquer/
 Requires:	sed
 Requires:	findutils
