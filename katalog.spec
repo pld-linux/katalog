@@ -39,8 +39,8 @@ katalogami CD:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_bindir},%{_sysconfdir}}
+
 install kat{add,ls,sch} $RPM_BUILD_ROOT%{_bindir}
 install katalogrc $RPM_BUILD_ROOT%{_sysconfdir}
 
@@ -50,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %dir %{_datadir}/%{name}
+%doc README CHANGELOG
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/*
-%doc README CHANGELOG
