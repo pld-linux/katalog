@@ -1,12 +1,14 @@
+
+%define		_pre pre1
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
 Summary(pl):	Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji katalogami CD
 Name:		katalog
-Version:	1.9
-Release:	1
+Version:	1.10
+Release:	0.%{_pre}.1
 Epoch:		1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://www.ceti.pl/eaquer/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://www.ceti.pl/eaquer/%{name}/%{name}-%{version}%{_pre}.tar.gz
 URL:		http://www.ceti.pl/eaquer/
 Requires:	sed
 Requires:	findutils
@@ -33,7 +35,7 @@ katalogami CD:
  - katls - Tworzy listê zainstalowanych baz danych
 
 %prep
-%setup  -q
+%setup  -q -n %{name}-%{version}%{_pre}
 
 %build
 
@@ -50,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %dir %{_datadir}/%{name}
-%doc README CHANGELOG
+%doc README CHANGELOG cgi/*
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/*
