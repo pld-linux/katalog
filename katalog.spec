@@ -53,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %dir %{_datadir}/%{name}
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/*
+%config(noreplace) %{_sysconfdir}/*
 %doc *gz
