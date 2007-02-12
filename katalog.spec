@@ -1,7 +1,7 @@
 
 %define		_pre pre2
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
-Summary(pl):	Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji katalogami CD
+Summary(pl.UTF-8):   Katalog jest zbiorem trzech skryptÃ³w basha sÅ‚uÅ¼Ä…cych do manipulacji katalogami CD
 Name:		katalog
 Version:	1.10
 Release:	0.%{_pre}.1
@@ -27,13 +27,13 @@ Katalog is set of three bash scripts to manipulate CD catalogs:
  - katsch - It is used to search for an regexp in bases
  - katls - It gives you a list of currently installed databases
 
-%description -l pl
-Katalog jest zbiorem trzech skryptów basha s³u¿±cych do manipulacji
+%description -l pl.UTF-8
+Katalog jest zbiorem trzech skryptÃ³w basha sÅ‚uÅ¼Ä…cych do manipulacji
 katalogami CD:
- - katadd - Tworzy listê plików znajduj±cych siê na CD i zapisuje j± do
+ - katadd - Tworzy listÄ™ plikÃ³w znajdujÄ…cych siÄ™ na CD i zapisuje jÄ… do
    pliku
- - katsch - Jest u¿ywany do wyszukiwania wyra¿eñ regularnych w bazach
- - katls - Tworzy listê zainstalowanych baz danych
+ - katsch - Jest uÅ¼ywany do wyszukiwania wyraÅ¼eÅ„ regularnych w bazach
+ - katls - Tworzy listÄ™ zainstalowanych baz danych
 
 %prep
 %setup  -q -n %{name}-%{version}%{_pre}
