@@ -1,7 +1,7 @@
 
 %define		_pre pre2
 Summary:	Katalog is set of three bash scripts to manipulate CD catalogs
-Summary(pl.UTF-8):   Katalog jest zbiorem trzech skryptów basha służących do manipulacji katalogami CD
+Summary(pl.UTF-8):	Katalog jest zbiorem trzech skryptów basha służących do manipulacji katalogami CD
 Name:		katalog
 Version:	1.10
 Release:	0.%{_pre}.1
